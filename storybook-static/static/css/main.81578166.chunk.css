@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,800);
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -15,7 +16,6 @@ code {
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
  * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,800");
 html,
 body {
   margin: 0;
@@ -171,8 +171,6 @@ input[type="submit"] {
 }
 input[type="search"] {
   -webkit-appearance: textfield;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 input[type="search"]::-webkit-search-decoration {
@@ -204,7 +202,8 @@ textarea {
   word-break: break-all;
   -ms-word-break: break-all;
   word-break: break-word;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 .type-light {
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -362,6 +361,7 @@ input:-webkit-autofill {
   speak: none;
   font-style: normal;
   font-weight: normal;
+  font-feature-settings: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
@@ -419,6 +419,7 @@ input:-webkit-autofill {
   speak: none;
   font-style: normal;
   font-weight: normal;
+  font-feature-settings: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
@@ -860,7 +861,7 @@ a:focus {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  flex: 1;
+  flex: 1 1;
 }
 .list-item input[type="text"] {
   background: transparent;
@@ -1009,3 +1010,6 @@ a:focus {
   vertical-align: top;
   max-width: 100%;
 }
+
+
+/*# sourceMappingURL=main.81578166.chunk.css.map*/
